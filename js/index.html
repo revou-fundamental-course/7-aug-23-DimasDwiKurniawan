@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas & Keliling Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Kalkulator Luas & Keliling Segitiga</h1>
+    
+    <!-- Hitung Luas Segitiga -->
+    <section class="calculator-section">
+        <h2>Hitung Luas Segitiga</h2>
+        <img src="luas.jpg" alt="Rumus Luas Segitiga">
+        <p>Menggunakan rumus: Luas = 1/2 * Alas * Tinggi</p>
+        <form id="triangle-area-form">
+            <label for="alas">Alas:</label>
+            <input type="number" id="alas" name="alas" required>
+
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi" name="tinggi" required>
+
+            <button type="button" id="luas-calculate-button">Hitung Luas</button>
+        </form>
+
+        <div id="luas-result-container">
+            <p id="luas-result"></p>
+        </div>
+    </section>
+
+    <!-- Hitung Keliling Segitiga -->
+    <section class="calculator-section">
+        <img src="download (2).jpg" alt="Rumus Keliling Segitiga">
+        <h2>Hitung Keliling Segitiga</h2>
+        <p>Menggunakan rumus: Keliling = Sisi A + Sisi B + Sisi C</p>
+        <form id="triangle-perimeter-form">
+            <label for="side-a">Panjang Sisi A:</label>
+            <input type="number" id="side-a" name="sideA" required>
+
+            <label for="side-b">Panjang Sisi B:</label>
+            <input type="number" id="side-b" name="sideB" required>
+
+            <label for="side-c">Panjang Sisi C:</label>
+            <input type="number" id="side-c" name="sideC" required>
+
+            <button type="button" id="keliling-calculate-button">Hitung Keliling</button>
+        </form>
+
+        <div id="keliling-result-container">
+            <p id="keliling-result"></p>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
